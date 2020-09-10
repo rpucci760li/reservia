@@ -23,7 +23,7 @@ body{
 /*Body*/
 
 #blocpage{
-	width: 90%;
+	width: 95%;
 	margin: auto;
 }
 
@@ -258,10 +258,12 @@ a.sign{
 
 section.sec_heb{
 	display: flex;
+	
 }
 
 
 aside{
+
 	flex: 1.2;
 	position: relative;
 
@@ -281,8 +283,8 @@ article.house{
 	position: relative;
 
 	height: auto;
-	width: 90%;
-
+	
+	margin: 5px;
 	
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
@@ -380,8 +382,8 @@ a.plus_heb{
 	background-color: #F2F2F2;
 
 	height: auto;
-
-	margin-left: 30px;
+	
+	margin: 5px;
 	
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
@@ -495,6 +497,31 @@ a.plus_heb{
 	
 
 
+}
+
+@media screen and (max-width: 1280px){
+
+	
+	section{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+	}
+
+	article{
+
+		width: 400px;
+	}
+
+	aside{
+		
+		margin-top: 25px;
+		width: 400px;
+
+
+	}
 }
 
 /*Activités*/
@@ -663,6 +690,19 @@ a.plus_heb{
 
 }
 
+@media screen and (max-width: 1280px) {
+	
+	#act{
+		display: flex;
+		flex-direction: column;
+	}
+
+	article.int_carte{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 /*Footer*/
 
 #footer{
@@ -671,8 +711,6 @@ a.plus_heb{
 	background-color: #F2F2F2;
 
 	height: 200px;
-	
-	background-position: center;
 
 	display: flex;
 	justify-content: flex-start;
@@ -688,13 +726,20 @@ a.plus_heb{
 	display: flex;
 	flex-direction: column;
 	
-
-
 }
 
 a{
 	text-decoration: none;
 	color: #000000
+}
+
+@media screen and (max-width: 1280px) {
+	
+	#footer{
+		display: flex;
+		flex-direction: column;
+	}
+
 }
 
 /*Body_error*/
